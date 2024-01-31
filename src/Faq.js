@@ -43,7 +43,7 @@ const Faq = () => {
 
             <input type="text" name="text" placeholder="enter your e-mail address" />
           <span>  <button>Subscribe</button></span>
-       <span>button</span>
+
         </div>
     );
 }
