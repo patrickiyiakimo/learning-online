@@ -1,5 +1,6 @@
 import Content from "./Content";
 import Faq from "./Faq";
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import Instructor from "./Instructor";
@@ -32,6 +33,9 @@ function App() {
         </div>
         <div className="faq">
           <Faq />
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     </div>
