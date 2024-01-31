@@ -41,9 +41,11 @@ const Faq = () => {
             <h2>{ header }</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto consequatur dolorem cumque qui fugiat omnis quia! Impedit quae exercitationem, deserunt similique tempore maxime provident a blanditiis, quos ducimus excepturi mollitia. Accusantium earum natus animi quibusdam ea itaque? At voluptatem tempore saepe vel eum voluptates fuga deleniti, velit possimus consequuntur?</p>
 
-            <input type="text" name="text" placeholder="enter your e-mail address" />
+        <div className="form-container">
+        <input type="text" name="text" placeholder="enter your e-mail address" />
           <span>  <button>Subscribe</button></span>
 
+        </div>
         </div>
     );
 }

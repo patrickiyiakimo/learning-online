@@ -384,26 +384,27 @@ body{
   padding-bottom:30px;
 }
 
-.faq input{
-  /* margin-left:40%;
-  text-align: center; */
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-right:30px;
-  padding-left:30px;
-  background-color: aquamarine;
-  border:none;
-  margin-left:60px;
+.faq .form-container{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content:center;
 }
-.faq span button{
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-right:30px;
-  padding-left:30px;
+.faq .form-container input {
+  padding: 15px 30px; 
+  margin: 0; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.faq span button {
+  padding: 15px 30px; 
   background-color: rgb(35, 132, 96);
-  color:white;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
   border:none;
-  margin-right:10%;
+  margin: 0px;
 }
 
 
