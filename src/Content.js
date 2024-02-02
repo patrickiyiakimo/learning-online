@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import img from "./images/RE1Mu3b.png";
+import ScrollReveal from "scrollreveal";
 import Marquee from "react-fast-marquee";
 
 const Content = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".your-target-class", {
+      duration: 1000,
+      delay: 300,
+      easing: "cubic-bezier(0.5,0,0,1)",
+    });
+  }, []);
   const [contents, setContents] = useState([
     {
       title: " Web Development",

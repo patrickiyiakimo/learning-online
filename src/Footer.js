@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <h4>Get Started</h4>
+      {/* <h4>Get Started</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
         doloremque blanditiis vel ea, repellat quam.
@@ -16,7 +16,7 @@ const Footer = () => {
       <p>Careers</p>
       <h4>Follow Us</h4>
       <p>Skillexlearning@gmail.com</p>
-      <p>+123456789</p>
+      <p>+123456789</p> */}
     </div>
   );
 };

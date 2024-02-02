@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ScrollReveal from 'scrollreveal';
+
 
 const Faq = () => {
   const header = "Subscribe to the Newsletter";
