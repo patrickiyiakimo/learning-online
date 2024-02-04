@@ -1,6 +1,5 @@
 import { useState } from "react";
-import ScrollReveal from 'scrollreveal';
-
+import ScrollReveal from "scrollreveal";
 
 const Faq = () => {
   const header = "Subscribe to the Newsletter";
@@ -24,7 +23,37 @@ const Faq = () => {
         </p>
       )}
       <button type="button" onClick={() => setShow(!show)}>
-        {show === true ? "Hide" : "show"}
+        {show === true ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        )}
       </button>
 
       <h3>What can i learn from Skillex?</h3>
@@ -35,32 +64,120 @@ const Faq = () => {
           dolorum est.
         </p>
       )}
-      <button type="button" onClick={() => setShow1(!show1)}>
-        {show1 === true ? "Hide" : "show"}
-      </button>
+      <button type="button" onClick={() => setShow1(!show1)}></button>
 
       <h3>Can i teach on Skillex?</h3>
       {show2 && (
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa
           quisquam itaque ut<br></br> molestiae animi impedit corporis vitae
+          {show1 === true ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          )}
           dolorum est.
         </p>
       )}
-      <button type="button" onClick={() => setShow2(!show2)}>
-        {show2 === true ? "Hide" : "show"}
-      </button>
+      <button type="button" onClick={() => setShow2(!show2)}></button>
 
       <h3>What is included in Skillex membership?</h3>
       {show3 && (
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa
           quisquam itaque <br></br> molestiae animi impedit corporis vitae
+          {show2 === true ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          )}
           dolorum est.
         </p>
       )}
       <button type="button" onClick={() => setShow3(!show3)}>
-        {show3 === true ? "Hide" : "show"}
+        {show3 === true ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        )}
       </button>
 
       <h2>{header}</h2>
