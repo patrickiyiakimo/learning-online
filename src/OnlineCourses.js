@@ -1,13 +1,58 @@
 import learn from "./images/learn image.jpeg";
-import { motion, useScroll } from "framer-motion";
-
-function Component() {
-  const { scrollYProgress } = useScroll();
-
-  return <motion.div style={{ scaleX: scrollYProgress }} />;
-}
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const OnlineCourses = () => {
+  const setupScrollReveal = () => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".onlinecourses", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".online", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    // sr.reveal(".faq button", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+
+    // sr.reveal(".faq h2", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+
+    // sr.reveal(".faq p", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+
+    // sr.reveal(".form-container", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+  };
+
+  useEffect(() => {
+    setupScrollReveal();
+  });
+
   return (
     <div className="onlinecourses">
       <img src={learn} />

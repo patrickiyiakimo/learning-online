@@ -1,14 +1,59 @@
 import { motion, useScroll } from "framer-motion";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 const title = "SKILLEX";
 
-function Component() {
-  const { scrollYProgress } = useScroll();
-
-  return <motion.div style={{ scaleX: scrollYProgress }} />;
-}
-
 const Header = () => {
+  const setupScrollReveal = () => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".header", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".header .list", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".faq button", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".faq h2", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".faq p", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".form-container", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+  };
+
+  useEffect(() => {
+    setupScrollReveal();
+  });
   return (
     <div className="header">
       <div className="list">

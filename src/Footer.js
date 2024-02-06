@@ -1,4 +1,56 @@
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 const Footer = () => {
+  const setupScrollReveal = () => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".footer", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".footer .lister", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".footer content", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".footer content-one", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".footer content-two", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".form-container", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+  };
+
+  useEffect(() => {
+    setupScrollReveal();
+  });
+
   return (
     <div className="footer">
       <div className="lister">

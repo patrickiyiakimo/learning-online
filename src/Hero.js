@@ -5,19 +5,63 @@ import stan from "./images/images.jpeg";
 import air from "./images/airbnb.jpeg";
 import google from "./images/google.jpeg";
 import penn from "./images/penn.png";
+import { useEffect } from "react";
 // import Marquee from 'react-fast-marquee';
 
-import { motion, useScroll } from "framer-motion";
+// import { motion, useScroll } from "framer-motion";
 
 const text = "Your e-learning partner";
 
-function Component() {
-  const { scrollYProgress } = useScroll();
-
-  return <motion.div style={{ scaleX: scrollYProgress }} />;
-}
-
 const Hero = () => {
+  const setupScrollReveal = () => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".hero", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".section", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".sub-section", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".image", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".collabo", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".companies", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+  };
+
+  useEffect(() => {
+    setupScrollReveal();
+  });
   return (
     <div className="hero">
       <span>

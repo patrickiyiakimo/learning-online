@@ -1,13 +1,58 @@
-import { motion, useScroll } from "framer-motion";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const OurTopCategories = () => {
+  const setupScrollReveal = () => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".topcategories", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".wrapper", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".cart", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    // sr.reveal(".faq h2", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+
+    // sr.reveal(".faq p", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+
+    // sr.reveal(".form-container", {
+    //   duration: 1000,
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   delay: 200,
+    // });
+  };
+
+  useEffect(() => {
+    setupScrollReveal();
+  });
+
   const title = "Most popular Courses";
-
-  function Component() {
-    const { scrollYProgress } = useScroll();
-
-    return <motion.div style={{ scaleX: scrollYProgress }} />;
-  }
 
   return (
     <div className="topcategories">

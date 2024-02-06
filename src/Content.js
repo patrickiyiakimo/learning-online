@@ -1,15 +1,57 @@
-import { useState, useEffect } from "react";
+import { useState,  useEffect } from "react";
 import img from "./images/RE1Mu3b.png";
 import ScrollReveal from "scrollreveal";
 import Marquee from "react-fast-marquee";
 
 const Content = () => {
-  useEffect(() => {
-    ScrollReveal().reveal(".your-target-class", {
+  const setupScrollReveal = () => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".faq h3", {
       duration: 1000,
-      delay: 300,
-      easing: "cubic-bezier(0.5,0,0,1)",
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
     });
+
+    sr.reveal(".faq p", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".faq button", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".faq h2", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".faq p", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+
+    sr.reveal(".form-container", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "50px",
+      delay: 200,
+    });
+  };
+
+  useEffect(() => {
+    setupScrollReveal();
   }, []);
   const [contents, setContents] = useState([
     {
