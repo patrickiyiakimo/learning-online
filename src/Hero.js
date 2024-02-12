@@ -6,6 +6,7 @@ import air from "./images/airbnb.jpeg";
 import google from "./images/google.jpeg";
 import penn from "./images/penn.png";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 // import Marquee from 'react-fast-marquee';
 
 // import { motion, useScroll } from "framer-motion";
@@ -78,9 +79,23 @@ const Hero = () => {
             Reprehenderit debitis, itaque quos fugiat voluptas unde!
           </p>
           <span>
-            <button>Get Started</button>
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0px 0px 8px green",
+              }}
+            >
+              Get Started
+            </motion.button>
           </span>
-          <button>Discover</button>
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+              boxShadow: "0px 0px 8px black",
+            }}
+          >
+            Discover
+          </motion.button>
         </div>
         <div className="image">
           <img src={image} />

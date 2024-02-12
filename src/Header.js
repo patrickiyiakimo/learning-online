@@ -2,6 +2,12 @@ import { motion, useScroll } from "framer-motion";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 
+
+
+
+
+
+
 const title = "SKILLEX";
 
 const Header = () => {
@@ -71,7 +77,14 @@ const Header = () => {
           <li>Contact</li>
           <li>
             <span>
-              <button>Sign Up</button>
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 8px black",
+                }}
+              >
+                Sign Up
+              </motion.button>
             </span>
           </li>
         </ul>
